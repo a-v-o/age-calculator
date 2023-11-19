@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    font-style: italic;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    margin: 0;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    width: 40vw;
+    height: fit-content;
+    padding: 3vw;
+    padding-bottom: 5vw;
+    border-radius: 2vw;
+    border-bottom-right-radius: 12vw;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5vw;
+}
+
+img {
+    width: 3vw;
+    height: 3vw;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 100%;
+    padding: 15px;
+    position: relative;
+    left: 35vw;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1vw;  
+    font-weight: bold;
+    color: hsl(0, 1%, 44%);
+}
+
+span {
+    margin-right: 0.5vw;
+}
+
+.error-msg {
+    font-size: 0.75vw;
+    color: hsl(0, 100%, 67%);
+    position: absolute;
+    margin-top: 2px;
+}
+
+.age {
+    height: 5vw;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.age span {
+    color: hsl(259, 100%, 65%);
+}
+
+#dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 2vw;
+}
+
+.date {
+    display: block;
+    margin-top: 5px;
+    width: 8vw;
+    height: 3.5vw;
+    padding: 0.5vw;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.date::placeholder {
+    position: absolute;
+    top: 0;
+    transform: translateY(50%);
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: hsl(0, 1%, 44%);
+}
+
+.date:focus {
+    outline-color: transparent;
+    box-shadow: 0 0 2px 4px hsl(259, 100%, 65%);
+}
+
+.red {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 75%;
+        padding: 7vw;
+        padding-bottom: 20vw;
+        border-bottom-right-radius: 25vw;
+    }
+
+    span {
+        margin-right: 3vw;
+    }
+
+    h1 {
+        font-size: 12vw;
+        margin-top: 7.5vw;
+    }
+
+    label {
+        font-size: 3.5vw;
+    }
+
+    #dates {
+        justify-content: center;
+        width: 100%;
+        column-gap: 4vW;
+    }
+
+    .date {
+        width: 100%;
+        height: 6vh;
+        padding: 2vw;
+    }
+
+    .date::placeholder {
+        transform: translateY(1.5vh);
+        font-size: 3.5vw;
+        line-height: 6vh;
+    }
+
+    .error-msg {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 5vw;
+        height: 5vw;
+        display: block;
+        margin: 7vw auto;
+        position: unset;
+    }
+}
+
+.attribution {
+    font-size: 1.5vw;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
