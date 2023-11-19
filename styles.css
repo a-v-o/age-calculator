@@ -174,9 +174,7 @@ span {
     }
 
     .date::placeholder {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        position: unset;
         font-size: 3.5vw;
         line-height: 36px;
     }
