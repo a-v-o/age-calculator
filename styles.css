@@ -141,54 +141,53 @@ span {
 @media screen and (max-width: 600px) {
     main {
         width: 75%;
-        padding: 7vw;
-        padding-bottom: 20vw;
-        border-bottom-right-radius: 25vw;
+        padding: 24px;
+        padding-bottom: 64px;
+        border-bottom-right-radius: 80px;
     }
 
     span {
-        margin-right: 3vw;
+        margin-right: 12px;
     }
 
     h1 {
-        font-size: 12vw;
-        margin-top: 7.5vw;
+        font-size: 36px;
+        margin-top: 24px;
     }
 
     label {
-        font-size: 3.5vw;
+        font-size:12px;
     }
 
     #dates {
         justify-content: center;
         width: 100%;
-        column-gap: 4vW;
+        column-gap: 20px;
     }
 
     .date {
         width: 100%;
-        height: 6vh;
-        padding: 2vw;
+        height: 36px;
+        padding: 8px;
     }
 
     .date::placeholder {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        line-height: 6vh;
-        font-size: 3.5vw;
-        line-height: 6vh;
+        line-height: 36px;
+        font-size: 12px;
     }
 
     .error-msg {
-        font-size: 2vw;
+        font-size: 6px;
     }
 
     img {
-        width: 5vw;
-        height: 5vw;
+        width: 20px;
+        height: 20px;
         display: block;
-        margin: 7vw auto;
+        margin: 28px auto;
         position: unset;
     }
 }
