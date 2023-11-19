@@ -175,6 +175,7 @@ span {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        line-height: 6vh;
         font-size: 3.5vw;
         line-height: 6vh;
     }
